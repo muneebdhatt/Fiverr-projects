@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Shiftwire look: calm cool-white surfaces, deep navy text, blue-green accent. */
+:root {
+  --ink-50: 245 247 250;
+  --ink-100: 234 238 243;
+  --ink-200: 216 223 232;
+  --ink-300: 179 191 206;
+  --ink-400: 131 146 166;
+  --ink-500: 91 107 128;
+  --ink-600: 67 83 105;
+  --ink-700: 44 59 82;
+  --ink-800: 27 42 64;
+  --ink-900: 14 26 44;
+  --brand-50: 232 247 248;
+  --brand-100: 201 238 240;
+  --brand-200: 154 221 226;
+  --brand-300: 95 197 206;
+  --brand-400: 42 167 182;
+  --brand-500: 14 143 160;
+  --brand-600: 10 117 135;
+  --brand-700: 10 94 110;
+  --brand-800: 12 75 89;
+  --brand-900: 13 62 74;
+  --surface: 255 255 255;
+  --edge: 216 223 232;
+  --grid: #e4e9f0;
+  --axis: #5b6b80;
+  --cursor: #e8f7f8;
+  --tip: #ffffff;
+  --chart: #0a7587;
+  color-scheme: light;
+}
+.dark {
+  --ink-50: 11 19 32;
+  --ink-100: 17 28 45;
+  --ink-200: 27 42 64;
+  --ink-300: 43 61 87;
+  --ink-400: 93 112 137;
+  --ink-500: 134 150 172;
+  --ink-600: 169 182 199;
+  --ink-700: 200 209 222;
+  --ink-800: 224 230 238;
+  --ink-900: 241 244 248;
+  --brand-50: 13 42 49;
+  --brand-100: 15 58 68;
+  --brand-200: 17 83 97;
+  --brand-300: 20 120 138;
+  --brand-400: 27 155 176;
+  --brand-500: 54 185 205;
+  --brand-600: 26 160 181;
+  --brand-700: 95 208 224;
+  --brand-800: 142 224 236;
+  --brand-900: 192 240 246;
+  --surface: 15 25 41;
+  --edge: 38 52 74;
+  --grid: #1b2a40;
+  --axis: #8696ac;
+  --cursor: #0f3a44;
+  --tip: #111c2d;
+  --chart: #36b9cd;
+  color-scheme: dark;
+}
+
+html, body { min-height: 100%; }
+body {
+  @apply bg-ink-50 text-ink-900 antialiased;
+  font-family: 'DM Sans Variable', 'DM Sans', system-ui, 'Segoe UI', sans-serif;
+}
+h1, h2, h3, .font-display { font-family: 'Bricolage Grotesque Variable', 'Bricolage Grotesque', system-ui, sans-serif; letter-spacing: -0.015em; }
+h1 { font-weight: 700; }
+kbd { font-family: ui-monospace, 'Cascadia Mono', monospace; }
+.card .text-2xl, .card .text-3xl, .card .text-4xl { font-family: 'Bricolage Grotesque Variable', 'Bricolage Grotesque', sans-serif; font-weight: 700; letter-spacing: -0.02em; }
+::selection { background: rgb(var(--brand-200)); }
+
+@layer components {
+  .card { @apply rounded-xl border border-ink-200 bg-white shadow-card; }
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold transition disabled:cursor-not-allowed disabled:opacity-50; }
+  .btn-primary { @apply btn bg-brand-600 text-white shadow-sm hover:bg-brand-700 active:bg-brand-800; }
+  .btn-ghost { @apply btn border border-ink-300 bg-white text-ink-800 hover:bg-ink-50; }
+  .btn-danger { @apply btn bg-red-600 text-white hover:bg-red-700; }
+  .input { @apply w-full rounded-lg border border-ink-300 bg-white px-3 py-2 text-sm outline-none transition hover:border-ink-400 focus:border-brand-500 focus:ring-4 focus:ring-brand-100; }
+  .chip { @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold; }
+  .th { @apply px-4 py-2.5 text-left text-[11px] font-semibold uppercase tracking-wider text-ink-500; }
+  .td { @apply px-4 py-3 text-sm text-ink-700; }
+}
+@keyframes shimmer { 100% { transform: translateX(100%); } }
+.skeleton { position: relative; overflow: hidden; @apply rounded-md bg-ink-100; }
+.skeleton::after { content: ''; position: absolute; inset: 0; transform: translateX(-100%); background: linear-gradient(90deg, transparent, rgba(255,255,255,.7), transparent); animation: shimmer 1.3s infinite; }
+@keyframes pop { from { opacity: 0; transform: translateY(8px) scale(.98); } to { opacity: 1; transform: none; } }
+.pop { animation: pop .18s ease-out; }
+@keyframes blink { 50% { opacity: 0; } }
+.caret::after { content: '▍'; margin-left: 1px; animation: blink 1s steps(1) infinite; @apply text-brand-500; }
+
+/* Surfaces use pure white in light mode and a deep navy in dark mode. */
+.bg-white { background-color: rgb(var(--surface)); }
+.bg-white\/90 { background-color: rgb(var(--surface) / 0.9); }
+.ring-white { --tw-ring-color: rgb(var(--surface)); }
+.dark .btn-primary { color: #06161c; }
+
+/* Dark theme: the palette variables above flip; these cover the few fixed-colour utilities. */
+.dark .bg-emerald-50 { background-color: rgb(16 185 129 / 0.14); }
+.dark .bg-amber-50 { background-color: rgb(245 158 11 / 0.14); }
+.dark .bg-red-50, .dark .bg-red-100 { background-color: rgb(239 68 68 / 0.16); }
+.dark .hover\:bg-red-100:hover { background-color: rgb(239 68 68 / 0.26); }
+.dark .bg-teal-50 { background-color: rgb(20 184 166 / 0.14); }
+.dark .text-emerald-700, .dark .text-emerald-800, .dark .text-emerald-900 { color: #6ee7b7; }
+.dark .text-amber-700, .dark .text-amber-900 { color: #fcd34d; }
+.dark .text-red-700, .dark .text-red-800, .dark .text-red-900 { color: #fca5a5; }
+.dark .text-teal-700 { color: #5eead4; }
+.dark .border-emerald-200 { border-color: rgb(16 185 129 / 0.35); }
+.dark .border-amber-200 { border-color: rgb(245 158 11 / 0.35); }
+.dark .skeleton::after { background: linear-gradient(90deg, transparent, rgba(255,255,255,.06), transparent); }
