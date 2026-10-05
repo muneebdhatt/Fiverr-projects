@@ -1,0 +1,1138 @@
+{
+ "COMPANY": "Harbor & Pine Consulting",
+ "PASSWORD": "Welcome2026!",
+ "USERS": [
+  {
+   "id": "u1",
+   "name": "Maya Ellison",
+   "email": "maya.ellison@example.com",
+   "role": "member",
+   "title": "Senior Consultant",
+   "last_active_mins": 12,
+   "questions": 41
+  },
+  {
+   "id": "u2",
+   "name": "Daniel Okafor",
+   "email": "daniel.okafor@example.com",
+   "role": "admin",
+   "title": "Operations Lead",
+   "last_active_mins": 3,
+   "questions": 17
+  },
+  {
+   "id": "u3",
+   "name": "Priya Raman",
+   "email": "priya.raman@example.com",
+   "role": "member",
+   "title": "Account Manager",
+   "last_active_mins": 95,
+   "questions": 58
+  },
+  {
+   "id": "u4",
+   "name": "Tomás Herrera",
+   "email": "tomas.herrera@example.com",
+   "role": "member",
+   "title": "Project Manager",
+   "last_active_mins": 240,
+   "questions": 33
+  },
+  {
+   "id": "u5",
+   "name": "Grace Whitfield",
+   "email": "grace.whitfield@example.com",
+   "role": "member",
+   "title": "Finance Associate",
+   "last_active_mins": 1500,
+   "questions": 22
+  },
+  {
+   "id": "u6",
+   "name": "Samir Haddad",
+   "email": "samir.haddad@example.com",
+   "role": "member",
+   "title": "Junior Consultant",
+   "last_active_mins": 4300,
+   "questions": 9
+  }
+ ],
+ "PERSONAS": {
+  "member": "u1",
+  "admin": "u2"
+ },
+ "DOCS": [
+  {
+   "id": "d1",
+   "title": "Employee Handbook 2026",
+   "kind": "PDF",
+   "category": "Policy",
+   "pages": 42,
+   "size_kb": 3180,
+   "owner": "Daniel Okafor",
+   "updated": 20160,
+   "body": [
+    "Welcome to Harbor & Pine Consulting. This handbook describes how we work together, what you can expect from us, and what we expect from you.",
+    "Our standard working week is Monday to Friday, with core collaboration hours between 10:00 and 15:00 local time. Outside those hours you are free to organise your day around your projects.",
+    "Probation lasts three months for every new team member. A review meeting with your manager takes place at the end of the first, second and third month.",
+    "Performance reviews run twice a year, in June and December. Salary adjustments are decided after the December review and take effect on 1 February."
+   ]
+  },
+  {
+   "id": "d2",
+   "title": "Remote Work Policy",
+   "kind": "PDF",
+   "category": "Policy",
+   "pages": 6,
+   "size_kb": 410,
+   "owner": "Daniel Okafor",
+   "updated": 11520,
+   "body": [
+    "This policy explains when and where team members may work outside the office.",
+    "Team members may work remotely up to three days per week, as agreed with their manager. The remaining two days are spent in the office or on site with clients.",
+    "Everyone must be reachable during core hours, 10:00 to 15:00 local time, regardless of where they are working.",
+    "Working from another country for more than ten working days in a year needs written approval from Operations, because of tax and insurance rules."
+   ]
+  },
+  {
+   "id": "d3",
+   "title": "Expense Reimbursement Policy",
+   "kind": "PDF",
+   "category": "Policy",
+   "pages": 8,
+   "size_kb": 520,
+   "owner": "Grace Whitfield",
+   "updated": 8640,
+   "body": [
+    "All business expenses must be submitted within 30 days of the purchase, with an itemised receipt attached.",
+    "Client dinners are reimbursed up to $75 per person. Any client meal with a total above $400 needs written approval from your manager before the booking is made.",
+    "Alcohol is reimbursed only when a client is present and only within the per-person limit above.",
+    "Reimbursements are paid with the next regular payroll, usually within ten working days of approval."
+   ]
+  },
+  {
+   "id": "d4",
+   "title": "Client Onboarding Guide",
+   "kind": "Guide",
+   "category": "Guide",
+   "pages": 14,
+   "size_kb": 980,
+   "owner": "Priya Raman",
+   "updated": 5760,
+   "body": [
+    "A strong first week sets the tone for the whole engagement. Use this guide together with the Project Kickoff Checklist.",
+    "Within one working day of signature, send the welcome email and book the kickoff call. The account manager owns this step.",
+    "During week one, confirm the main contact, collect access to the tools the client uses, and agree the reporting rhythm. Record all of it in the client notes.",
+    "By the end of week one, share a one-page plan with the client covering scope, milestones and the first invoice date."
+   ]
+  },
+  {
+   "id": "d5",
+   "title": "Information Security Policy",
+   "kind": "PDF",
+   "category": "Policy",
+   "pages": 18,
+   "size_kb": 1240,
+   "owner": "Daniel Okafor",
+   "updated": 30240,
+   "body": [
+    "Protecting client and company data is the responsibility of every team member.",
+    "Laptops must use full-disk encryption and lock automatically after five minutes of inactivity. Passwords are kept in the company password manager, never in documents or chat.",
+    "Any suspected security incident, such as a lost laptop, a phishing click or an unexpected login alert, must be reported to the security desk within one hour of discovery.",
+    "Do not try to fix or investigate an incident on your own. Follow the steps in the Incident Response Playbook."
+   ]
+  },
+  {
+   "id": "d6",
+   "title": "Paid Time Off and Leave Policy",
+   "kind": "PDF",
+   "category": "Policy",
+   "pages": 9,
+   "size_kb": 610,
+   "owner": "Daniel Okafor",
+   "updated": 17280,
+   "body": [
+    "Full-time team members receive 25 days of paid time off each calendar year, plus public holidays.",
+    "Up to five unused days may be carried into the next year. Carried days must be used by 31 March.",
+    "Sick leave is paid in full for up to ten days a year. A doctor's note is required after three consecutive days.",
+    "Parental leave is 16 weeks at full pay for the primary carer and four weeks for the second carer."
+   ]
+  },
+  {
+   "id": "d7",
+   "title": "Brand Voice and Writing Guide",
+   "kind": "Guide",
+   "category": "Guide",
+   "pages": 11,
+   "size_kb": 870,
+   "owner": "Priya Raman",
+   "updated": 43200,
+   "body": [
+    "We write the way we talk to clients: clear, calm and specific.",
+    "Prefer short sentences. Lead with the outcome, then give the reason. Avoid jargon unless the client uses it first.",
+    "Client emails open with the person's first name and close with one clear next step and a date."
+   ]
+  },
+  {
+   "id": "d8",
+   "title": "Client Notes: Riverbend Dental",
+   "kind": "Guide",
+   "category": "Client notes",
+   "pages": 5,
+   "size_kb": 290,
+   "owner": "Priya Raman",
+   "updated": 1380,
+   "body": [
+    "Riverbend Dental is a four-clinic practice group. Main contact: Dr. Helen Marsh. Day-to-day contact: Owen Pruitt, practice manager.",
+    "On the call last Thursday, Riverbend asked for a simplified appointment-reminder process and a weekly summary of no-shows instead of the monthly report.",
+    "They also asked us to move the next review meeting to the second Tuesday of each month, and to copy Owen on all scheduling emails.",
+    "Open item: send an updated scope and price for the reminder work by the end of next week."
+   ]
+  },
+  {
+   "id": "d9",
+   "title": "Client Notes: Alder & Finch Logistics",
+   "kind": "Guide",
+   "category": "Client notes",
+   "pages": 4,
+   "size_kb": 240,
+   "owner": "Tomás Herrera",
+   "updated": 2880,
+   "body": [
+    "Alder & Finch Logistics runs regional freight across three depots. Main contact: Rebecca Lindqvist, finance director.",
+    "Their procurement rules require a 45-day payment term, agreed in the signed order form, which overrides our standard invoicing terms.",
+    "Invoices go to accounts@alderfinch.example.com and must quote the purchase order number."
+   ]
+  },
+  {
+   "id": "d10",
+   "title": "Client Notes: Cobalt Row Studios",
+   "kind": "Guide",
+   "category": "Client notes",
+   "pages": 3,
+   "size_kb": 180,
+   "owner": "Maya Ellison",
+   "updated": 7200,
+   "body": [
+    "Cobalt Row Studios is a 12-person design studio. Main contact: Imani Blake, studio director.",
+    "They prefer short written updates on Fridays rather than live calls. Keep each update to five lines.",
+    "Their fiscal year ends in September, so budget conversations should happen in July."
+   ]
+  },
+  {
+   "id": "d19",
+   "title": "Client Notes: Maple Ridge Veterinary",
+   "kind": "Guide",
+   "category": "Client notes",
+   "pages": 4,
+   "size_kb": 260,
+   "owner": "Maya Ellison",
+   "updated": 540,
+   "body": [
+    "Maple Ridge Veterinary is a three-clinic animal hospital group. Main contact: Dr. Anita Rao, medical director. Day-to-day contact: Jordan Mills, operations manager.",
+    "On Tuesday's call, Maple Ridge asked for a shared online calendar for surgery slots and a daily summary of next-day bookings for each clinic.",
+    "They also asked that all invoices be sent to Jordan and that Dr. Rao be copied only on invoices above $5,000.",
+    "The team prefers updates by email before 9:00 on weekdays, because clinic staff review messages before the first appointments.",
+    "Open item: send a draft rollout plan for the shared calendar by the end of this week."
+   ]
+  },
+  {
+   "id": "d11",
+   "title": "Project Kickoff Checklist",
+   "kind": "Guide",
+   "category": "Guide",
+   "pages": 3,
+   "size_kb": 150,
+   "owner": "Tomás Herrera",
+   "updated": 12960,
+   "body": [
+    "Use this checklist for every new project. Tick each item in the project tracker.",
+    "Before kickoff: signed order form on file, project folder created, client notes page started, team calendar invites sent.",
+    "Week one: confirm the main contact, request tool access, schedule the weekly status call, and send the one-page plan."
+   ]
+  },
+  {
+   "id": "d12",
+   "title": "Invoicing and Payment Terms",
+   "kind": "PDF",
+   "category": "Policy",
+   "pages": 5,
+   "size_kb": 360,
+   "owner": "Grace Whitfield",
+   "updated": 9360,
+   "body": [
+    "Our standard payment term is net 30 days from the invoice date.",
+    "Invoices are issued on the first working day of each month for work completed in the previous month.",
+    "Overdue invoices carry a late fee of 1.5% per month. The account manager contacts the client when an invoice is seven days overdue.",
+    "Any client-specific payment term must be written into the signed order form before the first invoice is issued."
+   ]
+  },
+  {
+   "id": "d13",
+   "title": "Travel Booking Guide",
+   "kind": "Guide",
+   "category": "Guide",
+   "pages": 7,
+   "size_kb": 430,
+   "owner": "Grace Whitfield",
+   "updated": 25920,
+   "body": [
+    "Book flights and trains through the company travel portal at least 14 days before departure where possible.",
+    "Economy class is standard for flights under six hours. Hotel stays are capped at $180 per night in most cities.",
+    "Send your itinerary to your manager and add it to the shared team calendar."
+   ]
+  },
+  {
+   "id": "d14",
+   "title": "Meeting Notes: Q3 Planning",
+   "kind": "Guide",
+   "category": "Meeting",
+   "pages": 4,
+   "size_kb": 210,
+   "owner": "Daniel Okafor",
+   "updated": 3600,
+   "body": [
+    "Attendees: Daniel, Priya, Tomás, Grace, Maya. The group agreed three priorities for the quarter.",
+    "Priority one: reduce time from signature to kickoff to three working days. Priority two: move all client notes into one format. Priority three: review the tools directory and retire unused subscriptions.",
+    "Action items: Priya drafts the new notes template by the 15th; Grace reviews tool costs by month end."
+   ]
+  },
+  {
+   "id": "d15",
+   "title": "Incident Response Playbook",
+   "kind": "PDF",
+   "category": "Policy",
+   "pages": 12,
+   "size_kb": 940,
+   "owner": "Daniel Okafor",
+   "updated": 36000,
+   "body": [
+    "This playbook covers the first hours after a suspected security incident.",
+    "Step one: report the incident to the security desk at security@example.com or on the incident hotline, 555-0142. Include what happened, when, and which devices or accounts are involved.",
+    "Step two: disconnect the affected device from the network but leave it powered on. Do not delete anything.",
+    "Step three: the security desk logs the incident, decides severity, and informs affected clients within 24 hours when client data is involved."
+   ]
+  },
+  {
+   "id": "d16",
+   "title": "Hiring and Interview Guide",
+   "kind": "Guide",
+   "category": "Guide",
+   "pages": 10,
+   "size_kb": 720,
+   "owner": "Daniel Okafor",
+   "updated": 51840,
+   "body": [
+    "Every role has a scorecard with four to six criteria, agreed before the first interview.",
+    "Interviews follow a fixed structure: introduction, a discussion of past work, and a values conversation. Each interviewer scores independently before the debrief.",
+    "Offers are approved by Operations and sent within two working days of the final interview."
+   ]
+  },
+  {
+   "id": "d17",
+   "title": "Software and Tools Directory",
+   "kind": "Guide",
+   "category": "Guide",
+   "pages": 6,
+   "size_kb": 330,
+   "owner": "Grace Whitfield",
+   "updated": 14400,
+   "body": [
+    "This directory lists the tools the team uses and who owns each subscription.",
+    "Project tracking, shared documents and the password manager are available to everyone on day one. Design tools and analytics need a request to Operations.",
+    "Tool costs are reviewed every quarter. Unused seats are removed after 60 days of inactivity."
+   ]
+  },
+  {
+   "id": "d18",
+   "title": "Holiday Calendar 2026",
+   "kind": "PDF",
+   "category": "Policy",
+   "pages": 2,
+   "size_kb": 120,
+   "owner": "Daniel Okafor",
+   "updated": 60480,
+   "body": [
+    "The office is closed on public holidays and on the company shutdown days between 24 December and 1 January.",
+    "Please agree client coverage with your account manager at least four weeks before any closure."
+   ]
+  }
+ ],
+ "QA": [
+  {
+   "id": "q1",
+   "question": "How many days a week can I work remotely?",
+   "keywords": [
+    "remote",
+    "remotely",
+    "work",
+    "home",
+    "week",
+    "days",
+    "wfh",
+    "office"
+   ],
+   "answer": "You can work remotely up to three days per week, as agreed with your manager [1]. Whichever days you choose, you need to be reachable during core hours, 10:00 to 15:00 local time [1]. If you plan to work from another country for more than ten working days in a year, you need written approval from Operations [1].",
+   "citations": [
+    {
+     "doc": "d2",
+     "quote": "Team members may work remotely up to three days per week, as agreed with their manager."
+    }
+   ]
+  },
+  {
+   "id": "q2",
+   "question": "What is the limit for client dinner expenses?",
+   "keywords": [
+    "expense",
+    "expenses",
+    "dinner",
+    "dinners",
+    "client",
+    "meal",
+    "limit",
+    "reimbursed",
+    "reimbursement",
+    "receipt"
+   ],
+   "answer": "Client dinners are reimbursed up to $75 per person [1]. If the total for a client meal will be above $400, get written approval from your manager before you book [1]. Submit your itemised receipt within 30 days of the purchase [2].",
+   "citations": [
+    {
+     "doc": "d3",
+     "quote": "Client dinners are reimbursed up to $75 per person."
+    },
+    {
+     "doc": "d3",
+     "quote": "All business expenses must be submitted within 30 days of the purchase, with an itemised receipt attached."
+    }
+   ]
+  },
+  {
+   "id": "q3",
+   "question": "What are our invoice payment terms?",
+   "keywords": [
+    "invoice",
+    "invoices",
+    "payment",
+    "terms",
+    "pay",
+    "net",
+    "late",
+    "overdue",
+    "fee"
+   ],
+   "answer": "Our standard term is net 30 days from the invoice date [1]. Overdue invoices carry a late fee of 1.5% per month [1]. One exception to know about: Alder & Finch Logistics has a 45-day term written into their signed order form, which overrides the standard terms [2].",
+   "citations": [
+    {
+     "doc": "d12",
+     "quote": "Our standard payment term is net 30 days from the invoice date."
+    },
+    {
+     "doc": "d9",
+     "quote": "Their procurement rules require a 45-day payment term, agreed in the signed order form, which overrides our standard invoicing terms."
+    }
+   ]
+  },
+  {
+   "id": "q4",
+   "question": "What should I do in the first week with a new client?",
+   "keywords": [
+    "first",
+    "week",
+    "new",
+    "client",
+    "onboarding",
+    "onboard",
+    "kickoff",
+    "start",
+    "checklist"
+   ],
+   "answer": "Send the welcome email and book the kickoff call within one working day of signature [1]. During week one, confirm the main contact, collect tool access and agree the reporting rhythm [1]. By the end of the week, share a one-page plan covering scope, milestones and the first invoice date [1]. The kickoff checklist has the full list of tick-boxes [2].",
+   "citations": [
+    {
+     "doc": "d4",
+     "quote": "During week one, confirm the main contact, collect access to the tools the client uses, and agree the reporting rhythm."
+    },
+    {
+     "doc": "d11",
+     "quote": "Week one: confirm the main contact, request tool access, schedule the weekly status call, and send the one-page plan."
+    }
+   ]
+  },
+  {
+   "id": "q5",
+   "question": "How do I report a security incident?",
+   "keywords": [
+    "security",
+    "incident",
+    "report",
+    "phishing",
+    "lost",
+    "laptop",
+    "breach",
+    "hotline"
+   ],
+   "answer": "Report it to the security desk within one hour of discovery [1]. Email security@example.com or call the incident hotline on 555-0142, and say what happened, when, and which devices or accounts are involved [2]. Disconnect the affected device from the network but leave it powered on, and do not delete anything [2].",
+   "citations": [
+    {
+     "doc": "d5",
+     "quote": "must be reported to the security desk within one hour of discovery."
+    },
+    {
+     "doc": "d15",
+     "quote": "Step one: report the incident to the security desk at security@example.com or on the incident hotline, 555-0142."
+    }
+   ]
+  },
+  {
+   "id": "q6",
+   "question": "What did Riverbend Dental ask for on the last call?",
+   "keywords": [
+    "riverbend",
+    "dental",
+    "call",
+    "asked",
+    "last",
+    "meeting",
+    "owen",
+    "helen"
+   ],
+   "answer": "Riverbend Dental asked for a simplified appointment-reminder process and a weekly no-show summary instead of the monthly report [1]. They also want the review meeting moved to the second Tuesday of each month, with Owen Pruitt copied on scheduling emails [1]. The open item is an updated scope and price for the reminder work, due by the end of next week [1].",
+   "citations": [
+    {
+     "doc": "d8",
+     "quote": "Riverbend asked for a simplified appointment-reminder process and a weekly summary of no-shows instead of the monthly report."
+    }
+   ]
+  },
+  {
+   "id": "q8",
+   "question": "How many days of paid time off do I get?",
+   "keywords": [
+    "paid",
+    "time",
+    "off",
+    "pto",
+    "vacation",
+    "annual",
+    "carry",
+    "carried",
+    "unused",
+    "holiday",
+    "days"
+   ],
+   "answer": "Full-time team members get 25 days of paid time off each calendar year, plus public holidays [1]. Up to five unused days can be carried into the next year, and they must be used by 31 March [2].",
+   "citations": [
+    {
+     "doc": "d6",
+     "quote": "Full-time team members receive 25 days of paid time off each calendar year, plus public holidays."
+    },
+    {
+     "doc": "d6",
+     "quote": "Up to five unused days may be carried into the next year. Carried days must be used by 31 March."
+    }
+   ]
+  },
+  {
+   "id": "q9",
+   "question": "How much parental leave do we offer?",
+   "keywords": [
+    "parental",
+    "maternity",
+    "paternity",
+    "leave",
+    "carer",
+    "baby",
+    "newborn",
+    "adoption"
+   ],
+   "answer": "Parental leave is 16 weeks at full pay for the primary carer and four weeks for the second carer [1].",
+   "citations": [
+    {
+     "doc": "d6",
+     "quote": "Parental leave is 16 weeks at full pay for the primary carer and four weeks for the second carer."
+    }
+   ]
+  },
+  {
+   "id": "q10",
+   "question": "What is the sick leave policy?",
+   "keywords": [
+    "sick",
+    "ill",
+    "illness",
+    "doctor",
+    "note",
+    "leave",
+    "unwell"
+   ],
+   "answer": "Sick leave is paid in full for up to ten days a year [1]. A doctor's note is required after three consecutive days [1].",
+   "citations": [
+    {
+     "doc": "d6",
+     "quote": "Sick leave is paid in full for up to ten days a year. A doctor's note is required after three consecutive days."
+    }
+   ]
+  },
+  {
+   "id": "q11",
+   "question": "What are the rules for booking travel?",
+   "keywords": [
+    "travel",
+    "flight",
+    "flights",
+    "hotel",
+    "hotels",
+    "book",
+    "booking",
+    "train",
+    "trains",
+    "trip",
+    "portal",
+    "economy"
+   ],
+   "answer": "Book flights and trains through the company travel portal at least 14 days before departure where possible [1]. Economy class is standard for flights under six hours, and hotel stays are capped at $180 per night in most cities [2].",
+   "citations": [
+    {
+     "doc": "d13",
+     "quote": "Book flights and trains through the company travel portal at least 14 days before departure where possible."
+    },
+    {
+     "doc": "d13",
+     "quote": "Economy class is standard for flights under six hours. Hotel stays are capped at $180 per night in most cities."
+    }
+   ]
+  },
+  {
+   "id": "q12",
+   "question": "How does our interview process work?",
+   "keywords": [
+    "interview",
+    "interviews",
+    "hiring",
+    "hire",
+    "candidate",
+    "candidates",
+    "scorecard",
+    "offer",
+    "offers",
+    "recruit"
+   ],
+   "answer": "Every role has a scorecard with four to six criteria, agreed before the first interview [1]. Offers are approved by Operations and sent within two working days of the final interview [2].",
+   "citations": [
+    {
+     "doc": "d16",
+     "quote": "Every role has a scorecard with four to six criteria, agreed before the first interview."
+    },
+    {
+     "doc": "d16",
+     "quote": "Offers are approved by Operations and sent within two working days of the final interview."
+    }
+   ]
+  },
+  {
+   "id": "q13",
+   "question": "What were the Q3 planning priorities?",
+   "keywords": [
+    "q3",
+    "planning",
+    "priorities",
+    "priority",
+    "quarter",
+    "goals",
+    "meeting",
+    "action",
+    "items"
+   ],
+   "answer": "The team agreed three priorities for the quarter: cut the time from signature to kickoff to three working days, move all client notes into one format, and review the tools directory to retire unused subscriptions [1]. Priya drafts the new notes template by the 15th, and Grace reviews tool costs by month end [1].",
+   "citations": [
+    {
+     "doc": "d14",
+     "quote": "Priority one: reduce time from signature to kickoff to three working days. Priority two: move all client notes into one format. Priority three: review the tools directory and retire unused subscriptions."
+    }
+   ]
+  },
+  {
+   "id": "q14",
+   "question": "How do I get access to design tools?",
+   "keywords": [
+    "design",
+    "tools",
+    "tool",
+    "analytics",
+    "software",
+    "subscription",
+    "subscriptions",
+    "seats",
+    "directory",
+    "request"
+   ],
+   "answer": "Project tracking, shared documents and the password manager are available to everyone on day one [1]. Design tools and analytics need a request to Operations [1]. Unused seats are removed after 60 days of inactivity [1].",
+   "citations": [
+    {
+     "doc": "d17",
+     "quote": "Project tracking, shared documents and the password manager are available to everyone on day one. Design tools and analytics need a request to Operations."
+    }
+   ]
+  },
+  {
+   "id": "q15",
+   "question": "How long is probation and when are performance reviews?",
+   "keywords": [
+    "probation",
+    "review",
+    "reviews",
+    "performance",
+    "salary",
+    "adjustment",
+    "adjustments",
+    "handbook",
+    "june",
+    "december"
+   ],
+   "answer": "Probation lasts three months for every new team member [1]. Performance reviews run twice a year, in June and December, and salary adjustments are decided after the December review [2].",
+   "citations": [
+    {
+     "doc": "d1",
+     "quote": "Probation lasts three months for every new team member."
+    },
+    {
+     "doc": "d1",
+     "quote": "Performance reviews run twice a year, in June and December. Salary adjustments are decided after the December review and take effect on 1 February."
+    }
+   ]
+  },
+  {
+   "id": "q16",
+   "question": "How does Cobalt Row Studios like to receive updates?",
+   "keywords": [
+    "cobalt",
+    "row",
+    "studios",
+    "studio",
+    "updates",
+    "update",
+    "friday",
+    "fridays",
+    "prefer",
+    "imani"
+   ],
+   "answer": "Cobalt Row Studios prefers short written updates on Fridays rather than live calls, and each update should be kept to five lines [1]. Their fiscal year ends in September, so budget conversations should happen in July [2].",
+   "citations": [
+    {
+     "doc": "d10",
+     "quote": "They prefer short written updates on Fridays rather than live calls. Keep each update to five lines."
+    },
+    {
+     "doc": "d10",
+     "quote": "Their fiscal year ends in September, so budget conversations should happen in July."
+    }
+   ]
+  },
+  {
+   "id": "q17",
+   "question": "How should I write client emails?",
+   "keywords": [
+    "write",
+    "writing",
+    "email",
+    "emails",
+    "tone",
+    "voice",
+    "style",
+    "sentences",
+    "wording"
+   ],
+   "answer": "Open with the person's first name and close with one clear next step and a date [1]. Keep sentences short, lead with the outcome, then give the reason, and avoid jargon unless the client uses it first [2].",
+   "citations": [
+    {
+     "doc": "d7",
+     "quote": "Client emails open with the person's first name and close with one clear next step and a date."
+    },
+    {
+     "doc": "d7",
+     "quote": "Prefer short sentences. Lead with the outcome, then give the reason. Avoid jargon unless the client uses it first."
+    }
+   ]
+  },
+  {
+   "id": "q18",
+   "question": "When is the office closed over the holidays?",
+   "keywords": [
+    "office",
+    "closed",
+    "closure",
+    "holiday",
+    "holidays",
+    "shutdown",
+    "christmas",
+    "december",
+    "public"
+   ],
+   "answer": "The office is closed on public holidays and on the company shutdown days between 24 December and 1 January [1]. Agree client coverage with your account manager at least four weeks before any closure [2].",
+   "citations": [
+    {
+     "doc": "d18",
+     "quote": "The office is closed on public holidays and on the company shutdown days between 24 December and 1 January."
+    },
+    {
+     "doc": "d18",
+     "quote": "Please agree client coverage with your account manager at least four weeks before any closure."
+    }
+   ]
+  }
+ ],
+ "NOT_FOUND": {
+  "id": "q7",
+  "question": "What is our stock option vesting schedule?",
+  "keywords": [
+   "stock",
+   "option",
+   "options",
+   "vesting",
+   "equity",
+   "shares",
+   "schedule"
+  ],
+  "answer": "I could not find this in your documents.",
+  "related": [
+   "d1",
+   "d6",
+   "d16"
+  ]
+ },
+ "SUGGESTIONS": [
+  "How many days a week can I work remotely?",
+  "What is the limit for client dinner expenses?",
+  "What are our invoice payment terms?",
+  "What should I do in the first week with a new client?",
+  "How do I report a security incident?"
+ ],
+ "TEMPLATES": [
+  {
+   "id": "t1",
+   "name": "Client update",
+   "description": "A short progress note for a client contact.",
+   "fields": [
+    {
+     "key": "client",
+     "label": "Client",
+     "default": "Riverbend Dental"
+    },
+    {
+     "key": "contact",
+     "label": "Contact first name",
+     "default": "Owen"
+    },
+    {
+     "key": "topic",
+     "label": "What is this about?",
+     "default": "the new appointment-reminder process"
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "name": "Internal follow-up",
+   "description": "A recap and next steps for the team after a meeting.",
+   "fields": [
+    {
+     "key": "meeting",
+     "label": "Meeting",
+     "default": "Q3 planning"
+    },
+    {
+     "key": "owner",
+     "label": "Action owner",
+     "default": "Priya"
+    },
+    {
+     "key": "date",
+     "label": "Due date",
+     "default": "the 15th"
+    }
+   ]
+  }
+ ],
+ "RECENT_QUESTIONS": [
+  {
+   "id": "r1",
+   "user": "Priya Raman",
+   "question": "What is the limit for client dinner expenses?",
+   "mins": 38,
+   "rating": "up"
+  },
+  {
+   "id": "r2",
+   "user": "Tomás Herrera",
+   "question": "What are our invoice payment terms?",
+   "mins": 110,
+   "rating": "up"
+  },
+  {
+   "id": "r3",
+   "user": "Maya Ellison",
+   "question": "How many days a week can I work remotely?",
+   "mins": 185,
+   "rating": "up"
+  },
+  {
+   "id": "r4",
+   "user": "Grace Whitfield",
+   "question": "How do I report a security incident?",
+   "mins": 460,
+   "rating": "up"
+  },
+  {
+   "id": "r5",
+   "user": "Samir Haddad",
+   "question": "What should I do in the first week with a new client?",
+   "mins": 1620,
+   "rating": null
+  },
+  {
+   "id": "r6",
+   "user": "Priya Raman",
+   "question": "What did Riverbend Dental ask for on the last call?",
+   "mins": 1730,
+   "rating": "up"
+  }
+ ],
+ "WRONG_ANSWERS": [
+  {
+   "id": "w1",
+   "user": "Tomás Herrera",
+   "question": "What are our invoice payment terms?",
+   "reason": "Missed that the client has their own terms in the order form.",
+   "mins": 2900,
+   "status": "Reviewed"
+  },
+  {
+   "id": "w2",
+   "user": "Samir Haddad",
+   "question": "How many days a week can I work remotely?",
+   "reason": "My manager said four days for my team.",
+   "mins": 4100,
+   "status": "Open"
+  },
+  {
+   "id": "w3",
+   "user": "Grace Whitfield",
+   "question": "What is the limit for client dinner expenses?",
+   "reason": "The limit looks out of date for New York.",
+   "mins": 5800,
+   "status": "Open"
+  }
+ ],
+ "USAGE": [
+  [
+   14,
+   3
+  ],
+  [
+   21,
+   5
+  ],
+  [
+   19,
+   4
+  ],
+  [
+   26,
+   7
+  ],
+  [
+   9,
+   2
+  ],
+  [
+   4,
+   1
+  ],
+  [
+   23,
+   6
+  ],
+  [
+   28,
+   8
+  ],
+  [
+   31,
+   6
+  ],
+  [
+   27,
+   9
+  ],
+  [
+   34,
+   7
+  ],
+  [
+   12,
+   3
+  ],
+  [
+   6,
+   2
+  ],
+  [
+   29,
+   8
+  ]
+ ],
+ "IMPORTABLE": {
+  "vendor onboarding guide": {
+   "kind": "PDF",
+   "pages": 1,
+   "body": [
+    "This guide explains how we bring a new vendor or subcontractor onto a client project, from the first request to the first payment. Follow it for every vendor so that contracts, access and payments are handled the same way each time.",
+    "Get written approval from your manager. Any vendor expected to cost more than $2,500 in total also needs approval from Operations.",
+    "Check the approved vendor list. If the vendor is already listed, skip to section 4.",
+    "Confirm with the client that they agree to a third party working on their project.",
+    "A signed services agreement and a signed confidentiality agreement on file.",
+    "A certificate of insurance covering at least $1,000,000 in professional liability.",
+    "A completed information security questionnaire, reviewed by the security desk within five working days.",
+    "Vendors receive access only to the folders and tools they need, and only for the length of the project. Access is requested through Operations, never shared by email. The project manager removes access on the day the engagement ends and records it in the project tracker.",
+    "Vendors are paid net 45 days from the date we receive a correct invoice. Invoices must quote the project code and the purchase order number. Payments are made on the second Friday of each month. If a client has agreed a shorter payment term with us, the vendor term does not change.",
+    "If a vendor misses a deadline by more than two working days, tell your manager and the client contact the same day. Do not agree to extra fees on your own. Any change to scope or price needs a written change request approved by Operations.",
+    "Vendor questions: vendors@example.com or 555-0178. Security questionnaire questions: security@example.com."
+   ],
+   "qa": [
+    {
+     "id": "v1",
+     "question": "What approval do I need before hiring a vendor?",
+     "keywords": [
+      "vendor",
+      "vendors",
+      "subcontractor",
+      "approval",
+      "approve",
+      "hire",
+      "hiring",
+      "engage",
+      "cost",
+      "approved"
+     ],
+     "answer": "Get written approval from your manager first [1]. If the vendor is expected to cost more than $2,500 in total, Operations must approve as well [1]. Also check the approved vendor list, and confirm with the client that they are happy for a third party to work on their project [2].",
+     "citations": [
+      {
+       "quote": "Any vendor expected to cost more than $2,500 in total also needs approval from Operations."
+      },
+      {
+       "quote": "Confirm with the client that they agree to a third party working on their project."
+      }
+     ]
+    },
+    {
+     "id": "v2",
+     "question": "What checks does a new vendor need to complete?",
+     "keywords": [
+      "vendor",
+      "vendors",
+      "checks",
+      "check",
+      "insurance",
+      "agreement",
+      "confidentiality",
+      "questionnaire",
+      "complete",
+      "new",
+      "requirements"
+     ],
+     "answer": "Every new vendor needs three things before work starts: a signed services agreement and confidentiality agreement [1], a certificate of insurance covering at least $1,000,000 in professional liability [2], and a completed information security questionnaire [3]. The security desk reviews the questionnaire within five working days [3].",
+     "citations": [
+      {
+       "quote": "A signed services agreement and a signed confidentiality agreement on file."
+      },
+      {
+       "quote": "A certificate of insurance covering at least $1,000,000 in professional liability."
+      },
+      {
+       "quote": "A completed information security questionnaire, reviewed by the security desk within five working days."
+      }
+     ]
+    },
+    {
+     "id": "v3",
+     "question": "When and how are vendors paid?",
+     "keywords": [
+      "vendor",
+      "vendors",
+      "paid",
+      "pay",
+      "payment",
+      "payments",
+      "net",
+      "terms",
+      "friday",
+      "invoice",
+      "subcontractor"
+     ],
+     "answer": "Vendors are paid net 45 days from the date we receive a correct invoice [1]. Payments go out on the second Friday of each month, and invoices must quote the project code and the purchase order number [1]. Even if a client has agreed a shorter payment term with us, the vendor term does not change [1].",
+     "citations": [
+      {
+       "quote": "Vendors are paid net 45 days from the date we receive a correct invoice."
+      }
+     ]
+    },
+    {
+     "id": "v4",
+     "question": "How do vendors get access to project tools and folders?",
+     "keywords": [
+      "vendor",
+      "vendors",
+      "access",
+      "tools",
+      "folders",
+      "remove",
+      "removed",
+      "ends",
+      "end",
+      "engagement",
+      "share"
+     ],
+     "answer": "Vendors get access only to the folders and tools they need, and only for the length of the project [1]. Request it through Operations, and never share access by email [1]. The project manager removes access on the day the engagement ends and records it in the project tracker [1].",
+     "citations": [
+      {
+       "quote": "Vendors receive access only to the folders and tools they need, and only for the length of the project."
+      }
+     ]
+    },
+    {
+     "id": "v5",
+     "question": "What should I do if a vendor misses a deadline?",
+     "keywords": [
+      "vendor",
+      "vendors",
+      "deadline",
+      "late",
+      "misses",
+      "missed",
+      "delay",
+      "extra",
+      "fees",
+      "change",
+      "scope",
+      "price"
+     ],
+     "answer": "If a vendor misses a deadline by more than two working days, tell your manager and the client contact the same day [1]. Do not agree to extra fees on your own [1]. Any change to scope or price needs a written change request approved by Operations [1].",
+     "citations": [
+      {
+       "quote": "If a vendor misses a deadline by more than two working days, tell your manager and the client contact the same day."
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "VENDOR_WORDS": [
+  "subcontractor",
+  "subcontractors",
+  "supplier",
+  "suppliers",
+  "vendor",
+  "vendors"
+ ]
+}
