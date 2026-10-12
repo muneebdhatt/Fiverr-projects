@@ -1,0 +1,112 @@
+import type { PersonId, ProjectId, Task, TaskStatus } from './types';
+
+type Row = [ProjectId, string, TaskStatus, PersonId, number, number, Priority, { done?: number; internal?: boolean; note?: string }?];
+type Priority = 'low' | 'medium' | 'high';
+
+// done tasks carry the day they were finished (offset), open tasks carry a due day.
+const ROWS: Row[] = [
+  // p1 Website redesign (Tessellate)
+  ['p1', 'Sitemap and page inventory', 'done', 'tom', -40, 6, 'medium', { done: -40 }],
+  ['p1', 'Homepage design, round 1', 'done', 'priya', -22, 18, 'high', { done: -22 }],
+  ['p1', 'Case study template design', 'done', 'priya', -5, 14, 'high', { done: -5 }],
+  ['p1', 'Build homepage and navigation', 'review', 'daniel', 2, 22, 'high', { note: 'Menu animation is heavy on older phones. Check before showing the client.' }],
+  ['p1', 'Write team page copy', 'review', 'sam', -2, 8, 'medium'],
+  ['p1', 'Build case study pages (6)', 'doing', 'daniel', 9, 30, 'high'],
+  ['p1', 'Enquiry form and email routing', 'backlog', 'daniel', 14, 8, 'medium'],
+  ['p1', 'Redirects from the old site', 'backlog', 'daniel', 18, 5, 'low', { internal: true }],
+  // p2 Brand guidelines (Tessellate)
+  ['p2', 'Logo usage rules', 'done', 'priya', -30, 10, 'high', { done: -30 }],
+  ['p2', 'Colour palette and accessibility pairs', 'done', 'priya', -12, 8, 'medium', { done: -12 }],
+  ['p2', 'Typography section', 'done', 'priya', -4, 9, 'medium', { done: -4 }],
+  ['p2', 'Voice and tone page', 'done', 'sam', -2, 6, 'low', { done: -2 }],
+  ['p2', 'Photography direction', 'review', 'priya', 0, 8, 'high', { note: 'Over budget by about 4 hours already. Do not add more shoot examples.' }],
+  ['p2', 'Layout the final PDF', 'doing', 'priya', 3, 10, 'high'],
+  ['p2', 'Export logo files (SVG, PNG, PDF)', 'backlog', 'priya', 4, 3, 'medium'],
+  ['p2', 'Handover call with the partners', 'backlog', 'tom', 6, 2, 'low'],
+  // p3 Online ordering site (Juniper Row)
+  ['p3', 'Menu structure and pickup rules', 'done', 'tom', -28, 6, 'medium', { done: -28 }],
+  ['p3', 'Ordering flow wireframes', 'done', 'priya', -16, 12, 'high', { done: -16 }],
+  ['p3', 'Daily specials page', 'done', 'lena', -3, 10, 'medium', { done: -3 }],
+  ['p3', 'Pickup slot picker', 'doing', 'daniel', 4, 20, 'high'],
+  ['p3', 'Order confirmation emails', 'review', 'lena', 2, 8, 'medium'],
+  ['p3', 'Checkout screen design', 'doing', 'priya', 5, 12, 'high'],
+  ['p3', 'Payment provider setup', 'backlog', 'daniel', 12, 10, 'high', { note: 'Approval takes about a week. Hannah needs to upload her ID and bank letter.' }],
+  ['p3', 'Staff view for the kitchen printer', 'backlog', 'lena', 20, 14, 'low', { internal: true }],
+  // p4 Seasonal campaign (Juniper Row)
+  ['p4', 'Campaign concept and name', 'done', 'priya', -25, 6, 'high', { done: -25 }],
+  ['p4', 'Window decal artwork', 'done', 'priya', -6, 8, 'high', { done: -6 }],
+  ['p4', 'Poster set (A2 and A3)', 'done', 'priya', -4, 9, 'medium', { done: -4 }],
+  ['p4', 'Email series copy', 'review', 'sam', 1, 6, 'medium'],
+  ['p4', 'Instagram carousel design', 'doing', 'priya', 3, 7, 'medium'],
+  ['p4', 'Menu card print proof', 'doing', 'priya', 2, 4, 'high', { note: 'Print proof must go out Monday. Vendor needs five working days.' }],
+  ['p4', 'Social captions', 'backlog', 'sam', 8, 4, 'low'],
+  ['p4', 'Launch day schedule', 'backlog', 'sam', 10, 2, 'low', { internal: true }],
+  // p5 Booking portal (Cadence Physio)
+  ['p5', 'Clinic and practitioner data model', 'done', 'daniel', -35, 12, 'high', { done: -35 }],
+  ['p5', 'Booking flow, three sites', 'done', 'daniel', -14, 40, 'high', { done: -14 }],
+  ['p5', 'Practitioner calendar sync', 'done', 'lena', -5, 18, 'high', { done: -5 }],
+  ['p5', 'SMS reminders', 'review', 'lena', 1, 14, 'medium', { note: 'Not in the original scope. Raise a change order with Omar.' }],
+  ['p5', 'Patient dashboard', 'doing', 'daniel', 6, 30, 'high'],
+  ['p5', 'Cancellation and rebooking rules', 'doing', 'lena', 4, 12, 'medium'],
+  ['p5', 'Accessibility pass', 'backlog', 'lena', 12, 10, 'medium'],
+  ['p5', 'Staff training session', 'backlog', 'tom', 18, 4, 'low'],
+  // p6 Clinic brand refresh (Cadence Physio)
+  ['p6', 'Brand audit and moodboard', 'done', 'maya', -45, 8, 'medium', { done: -45 }],
+  ['p6', 'Logo options (three routes)', 'done', 'priya', -20, 16, 'high', { done: -20 }],
+  ['p6', 'Chosen route refinement', 'done', 'priya', -3, 10, 'high', { done: -3 }],
+  ['p6', 'Signage artwork, three sites', 'doing', 'priya', 8, 14, 'medium'],
+  ['p6', 'Patient handbook copy', 'review', 'sam', 2, 12, 'medium', { note: 'Waiting on clinical review from Omar before layout.' }],
+  ['p6', 'Handbook layout', 'backlog', 'priya', 20, 16, 'medium'],
+  ['p6', 'Business card and letterhead', 'backlog', 'priya', 26, 5, 'low'],
+  ['p6', 'Rollout guide for the front desk', 'backlog', 'sam', 30, 4, 'low', { internal: true }],
+  // p7 Shop migration (Northgate Cycles)
+  ['p7', 'Catalogue export and clean-up', 'done', 'lena', -38, 16, 'high', { done: -38 }],
+  ['p7', 'Product import, 1,240 items', 'done', 'lena', -18, 22, 'high', { done: -18 }],
+  ['p7', 'Customer and order migration', 'done', 'daniel', -6, 24, 'high', { done: -6 }],
+  ['p7', 'Redirect map', 'review', 'lena', -1, 10, 'high', { note: 'Riskiest piece. Callum needs to confirm the top 50 landing pages.' }],
+  ['p7', 'Checkout and shipping rules', 'doing', 'daniel', 3, 18, 'high'],
+  ['p7', 'Staging walkthrough with the client', 'doing', 'tom', 4, 3, 'medium'],
+  ['p7', 'Cutover weekend plan', 'backlog', 'tom', 10, 4, 'high'],
+  ['p7', 'Post-launch monitoring', 'backlog', 'lena', 14, 6, 'medium', { internal: true }],
+  // p8 Spring catalogue (Northgate Cycles)
+  ['p8', 'Catalogue structure and page plan', 'done', 'priya', -24, 6, 'medium', { done: -24 }],
+  ['p8', 'Cover concept', 'done', 'priya', -2, 8, 'high', { done: -2 }],
+  ['p8', 'Intro and range copy', 'done', 'sam', -5, 7, 'medium', { done: -5 }],
+  ['p8', 'Product page template', 'doing', 'priya', 6, 10, 'medium'],
+  ['p8', 'Product descriptions (48)', 'doing', 'sam', 9, 14, 'medium'],
+  ['p8', 'Photography selects', 'backlog', 'priya', 14, 5, 'high', { note: 'Blocked until Callum sends the final product shots.' }],
+  ['p8', 'Print-ready files', 'backlog', 'priya', 40, 6, 'medium'],
+  ['p8', 'Online flipbook version', 'backlog', 'priya', 44, 4, 'low', { internal: true }],
+  // p9 Wine club app (Alder & Vine)
+  ['p9', 'Member journey map', 'done', 'tom', -50, 10, 'medium', { done: -50 }],
+  ['p9', 'Monthly selection screens', 'done', 'priya', -20, 20, 'high', { done: -20 }],
+  ['p9', 'Subscription and pause logic', 'done', 'daniel', -9, 32, 'high', { done: -9 }],
+  ['p9', 'Tasting notes editor for the sommelier', 'done', 'lena', -3, 16, 'medium', { done: -3 }],
+  ['p9', 'Push notifications', 'review', 'lena', 1, 12, 'medium'],
+  ['p9', 'Loyalty tier (new request)', 'backlog', 'daniel', 25, 24, 'medium', { note: 'Not in scope. Quote separately before starting.' }],
+  ['p9', 'Order history and reorder', 'doing', 'daniel', 5, 20, 'high'],
+  ['p9', 'App store listing and screenshots', 'backlog', 'priya', 30, 8, 'low'],
+  // p10 Website and local SEO (Lumen Dental)
+  ['p10', 'Practice content audit', 'done', 'sam', -34, 8, 'medium', { done: -34 }],
+  ['p10', 'Page templates for five practices', 'done', 'lena', -11, 26, 'high', { done: -11 }],
+  ['p10', 'Service pages copy (first practice)', 'done', 'sam', -3, 10, 'medium', { done: -3 }],
+  ['p10', 'Local listings clean-up', 'review', 'sam', 2, 8, 'medium'],
+  ['p10', 'Practice pages build (4 remaining)', 'doing', 'lena', 8, 28, 'high'],
+  ['p10', 'Appointment request form', 'doing', 'lena', 4, 8, 'medium'],
+  ['p10', 'Schema markup and review snippets', 'backlog', 'lena', 14, 6, 'medium'],
+  ['p10', 'Performance and launch checklist', 'backlog', 'tom', 22, 5, 'medium', { internal: true }],
+];
+
+export const TASKS: Task[] = ROWS.map(([projectId, title, status, assignee, d, est, priority, x], i) => ({
+  id: `t${i + 1}`,
+  projectId,
+  title,
+  status,
+  assignee,
+  due: status === 'done' ? d + 3 : d,
+  est,
+  priority,
+  doneDay: status === 'done' ? x?.done ?? d : undefined,
+  internal: x?.internal,
+  note: x?.note,
+}));
